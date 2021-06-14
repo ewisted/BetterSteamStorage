@@ -3,11 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31220.234
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterSteamStorage.Web", "BetterSteamStorage.Web\BetterSteamStorage.Web.csproj", "{A758EC28-6C3F-4F8A-A6EA-3F4FA2283EEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BetterSteamStorage.Web", "BetterSteamStorage.Web\BetterSteamStorage.Web.csproj", "{A758EC28-6C3F-4F8A-A6EA-3F4FA2283EEB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterSteamStorage.WinService", "BetterSteamStorage.WinService\BetterSteamStorage.WinService.csproj", "{17DE8EB3-F878-4FFD-A59A-29D779587561}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterSteamStorage.Common", "BetterSteamStorage.Common\BetterSteamStorage.Common.csproj", "{E17A36E2-1FE7-4673-987C-E9FA4E5C8E36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BetterSteamStorage.Common", "BetterSteamStorage.Common\BetterSteamStorage.Common.csproj", "{E17A36E2-1FE7-4673-987C-E9FA4E5C8E36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{50C89750-0259-4B41-84EA-CDCAB851B2D7}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
