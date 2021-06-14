@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31220.234
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterSteamStorage.Web", "BetterSteamStorage.Web\BetterSteamStorage.Web.csproj", "{A758EC28-6C3F-4F8A-A6EA-3F4FA2283EEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterSteamStorage.WinService", "BetterSteamStorage.WinService\BetterSteamStorage.WinService.csproj", "{17DE8EB3-F878-4FFD-A59A-29D779587561}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterSteamStorage.Common", "BetterSteamStorage.Common\BetterSteamStorage.Common.csproj", "{E17A36E2-1FE7-4673-987C-E9FA4E5C8E36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A758EC28-6C3F-4F8A-A6EA-3F4FA2283EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A758EC28-6C3F-4F8A-A6EA-3F4FA2283EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A758EC28-6C3F-4F8A-A6EA-3F4FA2283EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A758EC28-6C3F-4F8A-A6EA-3F4FA2283EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17DE8EB3-F878-4FFD-A59A-29D779587561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17DE8EB3-F878-4FFD-A59A-29D779587561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17DE8EB3-F878-4FFD-A59A-29D779587561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17DE8EB3-F878-4FFD-A59A-29D779587561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E17A36E2-1FE7-4673-987C-E9FA4E5C8E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E17A36E2-1FE7-4673-987C-E9FA4E5C8E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E17A36E2-1FE7-4673-987C-E9FA4E5C8E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E17A36E2-1FE7-4673-987C-E9FA4E5C8E36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C56EBC92-A2E0-4BCE-8F9F-01839787CA09}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,61 @@
+﻿@page "/fetchdata"
+
+@using BetterSteamStorage.Web.Data
+@inject WeatherForecastService ForecastService
+
+<AuthorizeView>
+    <Authorized>
+        <h1>Weather forecast for @context.User.Identity.Name</h1>
+
+        <p>This component demonstrates fetching data from a service.</p>
+
+        @if (forecasts == null)
+        {
+            <p><em>Loading...</em></p>
+        }
+        else
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Temp. (C)</th>
+                        <th>Temp. (F)</th>
+                        <th>Summary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var forecast in forecasts)
+                    {
+                        <tr>
+                            <td>@forecast.Date.ToShortDateString()</td>
+                            <td>@forecast.TemperatureC</td>
+                            <td>@forecast.TemperatureF</td>
+                            <td>@forecast.Summary</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <button @onclick="() => ButtonClicked(context)">Authorized Only Button</button>
+        }
+    </Authorized>
+    <NotAuthorized>
+        <p><em>You must be logged in to view this page.</em></p>
+    </NotAuthorized>
+</AuthorizeView>
+
+
+@code {
+    private WeatherForecast[] forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+    }
+
+    private void ButtonClicked(AuthenticationState state)
+    {
+        var user = state.User;
+        Console.WriteLine("This is a test.");
+    }
+}
